@@ -35,7 +35,7 @@ export default class App extends Component {
           source={
             Platform.OS === "ios"
               ? require("./tpl.html")
-              : { uri: "file:///android_asset/tpl.html" }
+              : { uri: "file:///android_asset/tpl5.html" }
           }
           onMessage={event =>
             this.props.onPress
