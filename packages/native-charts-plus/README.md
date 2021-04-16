@@ -6,7 +6,7 @@
 
 ## install
 
-update echarts
+update echarts to 5.2.0
 
 $ npm install native-echarts --save
 
