@@ -26,5 +26,14 @@ export default function renderChart(props) {
       });
       window.postMessage(paramsString);
     });
+myChart.getZr().on("click", function(params) {
+          var pointInPixel = [params.offsetX, params.offsetY];
+          var pointInGrid=myChart.convertFromPixel({seriesIndex:0},pointInPixel);
+          var xIndex=pointInGrid[0];
+var paramsString = JSON.stringify({xIndex: xIndex})
+      window.postMessage(paramsString);
+        })
+
+
   `;
 }
